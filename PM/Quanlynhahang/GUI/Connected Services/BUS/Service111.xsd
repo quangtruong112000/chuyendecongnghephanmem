@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/BUS" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/BUS" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="BLLBan">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="BLLBan" nillable="true" type="tns:BLLBan" />
+  <xs:complexType name="BLLChiTietHD">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="BLLChiTietHD" nillable="true" type="tns:BLLChiTietHD" />
+  <xs:complexType name="BLLHoaDon">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="BLLHoaDon" nillable="true" type="tns:BLLHoaDon" />
+  <xs:complexType name="BLLNhanvien">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="BLLNhanvien" nillable="true" type="tns:BLLNhanvien" />
+  <xs:complexType name="BLLNhomMon">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="BLLNhomMon" nillable="true" type="tns:BLLNhomMon" />
+  <xs:complexType name="BLLThucDon">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="BLLThucDon" nillable="true" type="tns:BLLThucDon" />
+  <xs:complexType name="BLLThucDonPhaChe">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="BLLThucDonPhaChe" nillable="true" type="tns:BLLThucDonPhaChe" />
+</xs:schema>

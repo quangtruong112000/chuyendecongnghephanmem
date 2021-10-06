@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="48d4b21b-f731-47ae-893f-a096345f6a0a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://cnpmutc1-001-site1.ftempurl.com/Service1.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Service17.xsd" MetadataType="Schema" ID="b505f6c3-f8fd-4065-b91a-181c3d55e32a" SourceId="1" SourceUrl="http://cnpmutc1-001-site1.ftempurl.com/Service1.svc?xsd=xsd3" />
+    <MetadataFile FileName="Service12.disco" MetadataType="Disco" ID="9038daca-3de3-40f2-b7cc-6ad7e641823a" SourceId="1" SourceUrl="http://cnpmutc1-001-site1.ftempurl.com/Service1.svc?disco" />
+    <MetadataFile FileName="Service18.xsd" MetadataType="Schema" ID="8f49f294-4cc7-4e76-b762-e14be7c3dcf9" SourceId="1" SourceUrl="http://cnpmutc1-001-site1.ftempurl.com/Service1.svc?xsd=xsd2" />
+    <MetadataFile FileName="Service12.wsdl" MetadataType="Wsdl" ID="fdea0f2e-0768-49d8-a02e-30a3074ae966" SourceId="1" SourceUrl="http://cnpmutc1-001-site1.ftempurl.com/Service1.svc?wsdl" />
+    <MetadataFile FileName="Service19.xsd" MetadataType="Schema" ID="e0428f1e-dcfd-4851-a851-cbb71001c341" SourceId="1" SourceUrl="http://cnpmutc1-001-site1.ftempurl.com/Service1.svc?xsd=xsd1" />
+    <MetadataFile FileName="Service110.xsd" MetadataType="Schema" ID="a40a26f8-7c0b-4bee-8826-8a1cee11b47c" SourceId="1" SourceUrl="http://cnpmutc1-001-site1.ftempurl.com/Service1.svc?xsd=xsd0" />
+    <MetadataFile FileName="Service111.xsd" MetadataType="Schema" ID="b94c7f89-3c12-4e69-a6e2-dcc79666ef1b" SourceId="1" SourceUrl="http://cnpmutc1-001-site1.ftempurl.com/Service1.svc?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

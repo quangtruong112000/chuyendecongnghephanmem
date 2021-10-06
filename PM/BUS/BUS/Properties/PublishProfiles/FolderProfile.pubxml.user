@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\ADMIN\Desktop\IIS</_PublishTargetUrl>
+    <History>True|2021-10-06T06:42:24.3998342Z;True|2021-10-06T11:22:35.1638147+07:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/BUS.dll">
+      <publishTime>10/06/2021 13:19:11</publishTime>
+    </File>
+    <File Include="bin/BUS.pdb">
+      <publishTime>10/06/2021 13:19:11</publishTime>
+    </File>
+    <File Include="bin/DAL.dll">
+      <publishTime>10/06/2021 13:19:11</publishTime>
+    </File>
+    <File Include="bin/DAL.dll.config">
+      <publishTime>10/05/2021 10:38:31</publishTime>
+    </File>
+    <File Include="bin/DAL.pdb">
+      <publishTime>10/06/2021 13:19:11</publishTime>
+    </File>
+    <File Include="bin/DTO.dll">
+      <publishTime>10/06/2021 13:08:27</publishTime>
+    </File>
+    <File Include="bin/DTO.dll.config">
+      <publishTime>10/04/2021 11:42:28</publishTime>
+    </File>
+    <File Include="bin/DTO.pdb">
+      <publishTime>10/06/2021 13:08:27</publishTime>
+    </File>
+    <File Include="Service1.svc">
+      <publishTime>10/04/2021 11:41:49</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>10/06/2021 11:22:35</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,14 @@
+C:\Users\ADMIN\Desktop\New folder (3)\BUS\DTO\bin\DTO.dll.config
+C:\Users\ADMIN\Desktop\New folder (3)\BUS\DTO\bin\DTO.dll
+C:\Users\ADMIN\Desktop\New folder (3)\BUS\DTO\bin\DTO.pdb
+C:\Users\ADMIN\Desktop\New folder (3)\BUS\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Desktop\New folder (3)\BUS\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\New folder (3)\BUS\DTO\obj\Debug\DTO.dll
+C:\Users\ADMIN\Desktop\New folder (3)\BUS\DTO\obj\Debug\DTO.pdb
+C:\Users\ADMIN\Desktop\PM\BUS\DTO\bin\DTO.dll.config
+C:\Users\ADMIN\Desktop\PM\BUS\DTO\bin\DTO.dll
+C:\Users\ADMIN\Desktop\PM\BUS\DTO\bin\DTO.pdb
+C:\Users\ADMIN\Desktop\PM\BUS\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\PM\BUS\DTO\obj\Debug\DTO.dll
+C:\Users\ADMIN\Desktop\PM\BUS\DTO\obj\Debug\DTO.pdb
+C:\Users\ADMIN\Desktop\PM\BUS\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache

@@ -1,0 +1,22 @@
+C:\Users\ADMIN\Desktop\New folder (3)\BUS\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Desktop\New folder (3)\BUS\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\New folder (3)\BUS\DAL\bin\DAL.dll.config
+C:\Users\ADMIN\Desktop\New folder (3)\BUS\DAL\bin\DAL.dll
+C:\Users\ADMIN\Desktop\New folder (3)\BUS\DAL\bin\DAL.pdb
+C:\Users\ADMIN\Desktop\New folder (3)\BUS\DAL\bin\DTO.dll
+C:\Users\ADMIN\Desktop\New folder (3)\BUS\DAL\bin\DTO.pdb
+C:\Users\ADMIN\Desktop\New folder (3)\BUS\DAL\bin\DTO.dll.config
+C:\Users\ADMIN\Desktop\New folder (3)\BUS\DAL\obj\Debug\DAL.dll
+C:\Users\ADMIN\Desktop\New folder (3)\BUS\DAL\obj\Debug\DAL.pdb
+C:\Users\ADMIN\Desktop\New folder (3)\BUS\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\ADMIN\Desktop\PM\BUS\DAL\bin\DAL.dll.config
+C:\Users\ADMIN\Desktop\PM\BUS\DAL\bin\DAL.dll
+C:\Users\ADMIN\Desktop\PM\BUS\DAL\bin\DAL.pdb
+C:\Users\ADMIN\Desktop\PM\BUS\DAL\bin\DTO.dll
+C:\Users\ADMIN\Desktop\PM\BUS\DAL\bin\DTO.pdb
+C:\Users\ADMIN\Desktop\PM\BUS\DAL\bin\DTO.dll.config
+C:\Users\ADMIN\Desktop\PM\BUS\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Desktop\PM\BUS\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\PM\BUS\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\ADMIN\Desktop\PM\BUS\DAL\obj\Debug\DAL.dll
+C:\Users\ADMIN\Desktop\PM\BUS\DAL\obj\Debug\DAL.pdb

@@ -1,0 +1,1238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://cnpmutc1-001-site1.ftempurl.com/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://cnpmutc1-001-site1.ftempurl.com/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://cnpmutc1-001-site1.ftempurl.com/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/DTO" />
+      <xsd:import schemaLocation="http://cnpmutc1-001-site1.ftempurl.com/Service1.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://cnpmutc1-001-site1.ftempurl.com/Service1.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/BUS" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_DTOBAN_InputMessage">
+    <wsdl:part name="parameters" element="tns:DTOBAN" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DTOBAN_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DTOBANResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DTOchitiethoadon_InputMessage">
+    <wsdl:part name="parameters" element="tns:DTOchitiethoadon" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DTOchitiethoadon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DTOchitiethoadonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DTOGMAIL_InputMessage">
+    <wsdl:part name="parameters" element="tns:DTOGMAIL" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DTOGMAIL_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DTOGMAILResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DTOHOAODN_InputMessage">
+    <wsdl:part name="parameters" element="tns:DTOHOAODN" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DTOHOAODN_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DTOHOAODNResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DTONHANVIEN_InputMessage">
+    <wsdl:part name="parameters" element="tns:DTONHANVIEN" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DTONHANVIEN_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DTONHANVIENResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DTONHOMMON_InputMessage">
+    <wsdl:part name="parameters" element="tns:DTONHOMMON" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DTONHOMMON_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DTONHOMMONResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DTOTHUCDON_InputMessage">
+    <wsdl:part name="parameters" element="tns:DTOTHUCDON" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DTOTHUCDON_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DTOTHUCDONResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RGB_InputMessage">
+    <wsdl:part name="parameters" element="tns:RGB" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RGB_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RGBResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TONGTIEN_InputMessage">
+    <wsdl:part name="parameters" element="tns:TONGTIEN" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TONGTIEN_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TONGTIENResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TinhTienGiam_InputMessage">
+    <wsdl:part name="parameters" element="tns:TinhTienGiam" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TinhTienGiam_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TinhTienGiamResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Send_InputMessage">
+    <wsdl:part name="parameters" element="tns:Send" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Send_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BLLBAN_InputMessage">
+    <wsdl:part name="parameters" element="tns:BLLBAN" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BLLBAN_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BLLBANResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BLLCTHD_InputMessage">
+    <wsdl:part name="parameters" element="tns:BLLCTHD" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BLLCTHD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BLLCTHDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BLLHOADON_InputMessage">
+    <wsdl:part name="parameters" element="tns:BLLHOADON" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BLLHOADON_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BLLHOADONResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BLLNHANVIEN_InputMessage">
+    <wsdl:part name="parameters" element="tns:BLLNHANVIEN" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BLLNHANVIEN_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BLLNHANVIENResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BLLNHOMMON_InputMessage">
+    <wsdl:part name="parameters" element="tns:BLLNHOMMON" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BLLNHOMMON_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BLLNHOMMONResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BLLTHUCDON_InputMessage">
+    <wsdl:part name="parameters" element="tns:BLLTHUCDON" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BLLTHUCDON_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BLLTHUCDONResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BLLTDPC_InputMessage">
+    <wsdl:part name="parameters" element="tns:BLLTDPC" />
+  </wsdl:message>
+  <wsdl:message name="IService1_BLLTDPC_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BLLTDPCResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelectBan_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectBan" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelectBan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectBanResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TongSoBan_InputMessage">
+    <wsdl:part name="parameters" element="tns:TongSoBan" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TongSoBan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TongSoBanResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InsertBan_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertBan" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InsertBan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertBanResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdeteBan_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdeteBan" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdeteBan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdeteBanResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteBan_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteBan" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteBan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteBanResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetChiTietHD_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetChiTietHD" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetChiTietHD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetChiTietHDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TimKiemCTHD_InputMessage">
+    <wsdl:part name="parameters" element="tns:TimKiemCTHD" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TimKiemCTHD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TimKiemCTHDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InsetCTHD_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsetCTHD" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InsetCTHD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsetCTHDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateCTHD_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCTHD" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateCTHD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCTHDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateCTHD2_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCTHD2" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateCTHD2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCTHD2Response" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteCTHD_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCTHD" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteCTHD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCTHDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TimKiemHoaDon5_InputMessage">
+    <wsdl:part name="parameters" element="tns:TimKiemHoaDon5" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TimKiemHoaDon5_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TimKiemHoaDon5Response" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ThongkeHD_InputMessage">
+    <wsdl:part name="parameters" element="tns:ThongkeHD" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ThongkeHD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ThongkeHDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetHD_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHD" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetHD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InsetHD_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsetHD" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InsetHD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsetHDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TimKiemHoaDon1_InputMessage">
+    <wsdl:part name="parameters" element="tns:TimKiemHoaDon1" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TimKiemHoaDon1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TimKiemHoaDon1Response" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TongSoHd_InputMessage">
+    <wsdl:part name="parameters" element="tns:TongSoHd" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TongSoHd_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TongSoHdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TimKiemHoaDon2_InputMessage">
+    <wsdl:part name="parameters" element="tns:TimKiemHoaDon2" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TimKiemHoaDon2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TimKiemHoaDon2Response" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TimKiemHoaDon_InputMessage">
+    <wsdl:part name="parameters" element="tns:TimKiemHoaDon" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TimKiemHoaDon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TimKiemHoaDonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InsetHD1_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsetHD1" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InsetHD1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsetHD1Response" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateHD_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateHD" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateHD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateHDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteHD_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteHD" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteHD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteHDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelectNV_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectNV" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelectNV_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectNVResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InsertIntoNV_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertIntoNV" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InsertIntoNV_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertIntoNVResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateNV_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateNV" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateNV_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateNVResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteNV_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteNV" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteNV_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteNVResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelectNhomMon_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectNhomMon" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelectNhomMon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectNhomMonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TongNhomMon_InputMessage">
+    <wsdl:part name="parameters" element="tns:TongNhomMon" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TongNhomMon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TongNhomMonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InsertNhomMon_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertNhomMon" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InsertNhomMon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertNhomMonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateNhomMon_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateNhomMon" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateNhomMon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateNhomMonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteNhomMon_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteNhomMon" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteNhomMon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteNhomMonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TimKiemNhomMon_InputMessage">
+    <wsdl:part name="parameters" element="tns:TimKiemNhomMon" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TimKiemNhomMon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TimKiemNhomMonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelectThucDon_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectThucDon" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelectThucDon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectThucDonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TongSoMon_InputMessage">
+    <wsdl:part name="parameters" element="tns:TongSoMon" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TongSoMon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TongSoMonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelectThucDon1_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectThucDon1" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelectThucDon1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectThucDon1Response" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelectThucDon2_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectThucDon2" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelectThucDon2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectThucDon2Response" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InsetThucDon_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsetThucDon" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InsetThucDon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsetThucDonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateThucDon_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateThucDon" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateThucDon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateThucDonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteThucDon_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteThucDon" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteThucDon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteThucDonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TimKiemThucDon_InputMessage">
+    <wsdl:part name="parameters" element="tns:TimKiemThucDon" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TimKiemThucDon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TimKiemThucDonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TimKiemThucDon2_InputMessage">
+    <wsdl:part name="parameters" element="tns:TimKiemThucDon2" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TimKiemThucDon2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TimKiemThucDon2Response" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TimKiemThucDon1_InputMessage">
+    <wsdl:part name="parameters" element="tns:TimKiemThucDon1" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TimKiemThucDon1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TimKiemThucDon1Response" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelectTDPC_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectTDPC" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelectTDPC_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectTDPCResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelectTDPC1_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectTDPC1" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelectTDPC1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectTDPC1Response" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InSertTDPC_InputMessage">
+    <wsdl:part name="parameters" element="tns:InSertTDPC" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InSertTDPC_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InSertTDPCResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdeteTDPC_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdeteTDPC" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdeteTDPC_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdeteTDPCResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="DTOBAN">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DTOBAN" message="tns:IService1_DTOBAN_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DTOBANResponse" message="tns:IService1_DTOBAN_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DTOchitiethoadon">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DTOchitiethoadon" message="tns:IService1_DTOchitiethoadon_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DTOchitiethoadonResponse" message="tns:IService1_DTOchitiethoadon_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DTOGMAIL">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DTOGMAIL" message="tns:IService1_DTOGMAIL_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DTOGMAILResponse" message="tns:IService1_DTOGMAIL_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DTOHOAODN">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DTOHOAODN" message="tns:IService1_DTOHOAODN_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DTOHOAODNResponse" message="tns:IService1_DTOHOAODN_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DTONHANVIEN">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DTONHANVIEN" message="tns:IService1_DTONHANVIEN_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DTONHANVIENResponse" message="tns:IService1_DTONHANVIEN_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DTONHOMMON">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DTONHOMMON" message="tns:IService1_DTONHOMMON_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DTONHOMMONResponse" message="tns:IService1_DTONHOMMON_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DTOTHUCDON">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DTOTHUCDON" message="tns:IService1_DTOTHUCDON_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DTOTHUCDONResponse" message="tns:IService1_DTOTHUCDON_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RGB">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/RGB" message="tns:IService1_RGB_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/RGBResponse" message="tns:IService1_RGB_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TONGTIEN">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TONGTIEN" message="tns:IService1_TONGTIEN_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TONGTIENResponse" message="tns:IService1_TONGTIEN_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TinhTienGiam">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TinhTienGiam" message="tns:IService1_TinhTienGiam_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TinhTienGiamResponse" message="tns:IService1_TinhTienGiam_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Send">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Send" message="tns:IService1_Send_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SendResponse" message="tns:IService1_Send_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BLLBAN">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/BLLBAN" message="tns:IService1_BLLBAN_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/BLLBANResponse" message="tns:IService1_BLLBAN_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BLLCTHD">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/BLLCTHD" message="tns:IService1_BLLCTHD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/BLLCTHDResponse" message="tns:IService1_BLLCTHD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BLLHOADON">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/BLLHOADON" message="tns:IService1_BLLHOADON_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/BLLHOADONResponse" message="tns:IService1_BLLHOADON_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BLLNHANVIEN">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/BLLNHANVIEN" message="tns:IService1_BLLNHANVIEN_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/BLLNHANVIENResponse" message="tns:IService1_BLLNHANVIEN_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BLLNHOMMON">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/BLLNHOMMON" message="tns:IService1_BLLNHOMMON_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/BLLNHOMMONResponse" message="tns:IService1_BLLNHOMMON_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BLLTHUCDON">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/BLLTHUCDON" message="tns:IService1_BLLTHUCDON_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/BLLTHUCDONResponse" message="tns:IService1_BLLTHUCDON_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BLLTDPC">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/BLLTDPC" message="tns:IService1_BLLTDPC_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/BLLTDPCResponse" message="tns:IService1_BLLTDPC_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectBan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelectBan" message="tns:IService1_SelectBan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelectBanResponse" message="tns:IService1_SelectBan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TongSoBan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TongSoBan" message="tns:IService1_TongSoBan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TongSoBanResponse" message="tns:IService1_TongSoBan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertBan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InsertBan" message="tns:IService1_InsertBan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InsertBanResponse" message="tns:IService1_InsertBan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdeteBan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdeteBan" message="tns:IService1_UpdeteBan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdeteBanResponse" message="tns:IService1_UpdeteBan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteBan" message="tns:IService1_DeleteBan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteBanResponse" message="tns:IService1_DeleteBan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetChiTietHD">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetChiTietHD" message="tns:IService1_GetChiTietHD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetChiTietHDResponse" message="tns:IService1_GetChiTietHD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TimKiemCTHD">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TimKiemCTHD" message="tns:IService1_TimKiemCTHD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TimKiemCTHDResponse" message="tns:IService1_TimKiemCTHD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsetCTHD">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InsetCTHD" message="tns:IService1_InsetCTHD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InsetCTHDResponse" message="tns:IService1_InsetCTHD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCTHD">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateCTHD" message="tns:IService1_UpdateCTHD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateCTHDResponse" message="tns:IService1_UpdateCTHD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCTHD2">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateCTHD2" message="tns:IService1_UpdateCTHD2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateCTHD2Response" message="tns:IService1_UpdateCTHD2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCTHD">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteCTHD" message="tns:IService1_DeleteCTHD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteCTHDResponse" message="tns:IService1_DeleteCTHD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TimKiemHoaDon5">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TimKiemHoaDon5" message="tns:IService1_TimKiemHoaDon5_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TimKiemHoaDon5Response" message="tns:IService1_TimKiemHoaDon5_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ThongkeHD">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ThongkeHD" message="tns:IService1_ThongkeHD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ThongkeHDResponse" message="tns:IService1_ThongkeHD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHD">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetHD" message="tns:IService1_GetHD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetHDResponse" message="tns:IService1_GetHD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsetHD">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InsetHD" message="tns:IService1_InsetHD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InsetHDResponse" message="tns:IService1_InsetHD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TimKiemHoaDon1">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TimKiemHoaDon1" message="tns:IService1_TimKiemHoaDon1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TimKiemHoaDon1Response" message="tns:IService1_TimKiemHoaDon1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TongSoHd">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TongSoHd" message="tns:IService1_TongSoHd_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TongSoHdResponse" message="tns:IService1_TongSoHd_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TimKiemHoaDon2">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TimKiemHoaDon2" message="tns:IService1_TimKiemHoaDon2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TimKiemHoaDon2Response" message="tns:IService1_TimKiemHoaDon2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TimKiemHoaDon">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TimKiemHoaDon" message="tns:IService1_TimKiemHoaDon_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TimKiemHoaDonResponse" message="tns:IService1_TimKiemHoaDon_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsetHD1">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InsetHD1" message="tns:IService1_InsetHD1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InsetHD1Response" message="tns:IService1_InsetHD1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateHD">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateHD" message="tns:IService1_UpdateHD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateHDResponse" message="tns:IService1_UpdateHD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteHD">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteHD" message="tns:IService1_DeleteHD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteHDResponse" message="tns:IService1_DeleteHD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectNV">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelectNV" message="tns:IService1_SelectNV_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelectNVResponse" message="tns:IService1_SelectNV_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertIntoNV">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InsertIntoNV" message="tns:IService1_InsertIntoNV_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InsertIntoNVResponse" message="tns:IService1_InsertIntoNV_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateNV">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateNV" message="tns:IService1_UpdateNV_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateNVResponse" message="tns:IService1_UpdateNV_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteNV">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteNV" message="tns:IService1_DeleteNV_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteNVResponse" message="tns:IService1_DeleteNV_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectNhomMon">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelectNhomMon" message="tns:IService1_SelectNhomMon_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelectNhomMonResponse" message="tns:IService1_SelectNhomMon_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TongNhomMon">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TongNhomMon" message="tns:IService1_TongNhomMon_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TongNhomMonResponse" message="tns:IService1_TongNhomMon_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertNhomMon">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InsertNhomMon" message="tns:IService1_InsertNhomMon_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InsertNhomMonResponse" message="tns:IService1_InsertNhomMon_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateNhomMon">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateNhomMon" message="tns:IService1_UpdateNhomMon_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateNhomMonResponse" message="tns:IService1_UpdateNhomMon_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteNhomMon">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteNhomMon" message="tns:IService1_DeleteNhomMon_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteNhomMonResponse" message="tns:IService1_DeleteNhomMon_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TimKiemNhomMon">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TimKiemNhomMon" message="tns:IService1_TimKiemNhomMon_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TimKiemNhomMonResponse" message="tns:IService1_TimKiemNhomMon_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectThucDon">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelectThucDon" message="tns:IService1_SelectThucDon_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelectThucDonResponse" message="tns:IService1_SelectThucDon_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TongSoMon">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TongSoMon" message="tns:IService1_TongSoMon_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TongSoMonResponse" message="tns:IService1_TongSoMon_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectThucDon1">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelectThucDon1" message="tns:IService1_SelectThucDon1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelectThucDon1Response" message="tns:IService1_SelectThucDon1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectThucDon2">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelectThucDon2" message="tns:IService1_SelectThucDon2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelectThucDon2Response" message="tns:IService1_SelectThucDon2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsetThucDon">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InsetThucDon" message="tns:IService1_InsetThucDon_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InsetThucDonResponse" message="tns:IService1_InsetThucDon_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateThucDon">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateThucDon" message="tns:IService1_UpdateThucDon_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateThucDonResponse" message="tns:IService1_UpdateThucDon_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteThucDon">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteThucDon" message="tns:IService1_DeleteThucDon_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteThucDonResponse" message="tns:IService1_DeleteThucDon_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TimKiemThucDon">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TimKiemThucDon" message="tns:IService1_TimKiemThucDon_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TimKiemThucDonResponse" message="tns:IService1_TimKiemThucDon_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TimKiemThucDon2">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TimKiemThucDon2" message="tns:IService1_TimKiemThucDon2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TimKiemThucDon2Response" message="tns:IService1_TimKiemThucDon2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TimKiemThucDon1">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TimKiemThucDon1" message="tns:IService1_TimKiemThucDon1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TimKiemThucDon1Response" message="tns:IService1_TimKiemThucDon1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectTDPC">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelectTDPC" message="tns:IService1_SelectTDPC_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelectTDPCResponse" message="tns:IService1_SelectTDPC_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectTDPC1">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelectTDPC1" message="tns:IService1_SelectTDPC1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelectTDPC1Response" message="tns:IService1_SelectTDPC1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InSertTDPC">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InSertTDPC" message="tns:IService1_InSertTDPC_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InSertTDPCResponse" message="tns:IService1_InSertTDPC_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdeteTDPC">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdeteTDPC" message="tns:IService1_UpdeteTDPC_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdeteTDPCResponse" message="tns:IService1_UpdeteTDPC_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DTOBAN">
+      <soap:operation soapAction="http://tempuri.org/IService1/DTOBAN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DTOchitiethoadon">
+      <soap:operation soapAction="http://tempuri.org/IService1/DTOchitiethoadon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DTOGMAIL">
+      <soap:operation soapAction="http://tempuri.org/IService1/DTOGMAIL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DTOHOAODN">
+      <soap:operation soapAction="http://tempuri.org/IService1/DTOHOAODN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DTONHANVIEN">
+      <soap:operation soapAction="http://tempuri.org/IService1/DTONHANVIEN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DTONHOMMON">
+      <soap:operation soapAction="http://tempuri.org/IService1/DTONHOMMON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DTOTHUCDON">
+      <soap:operation soapAction="http://tempuri.org/IService1/DTOTHUCDON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RGB">
+      <soap:operation soapAction="http://tempuri.org/IService1/RGB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TONGTIEN">
+      <soap:operation soapAction="http://tempuri.org/IService1/TONGTIEN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TinhTienGiam">
+      <soap:operation soapAction="http://tempuri.org/IService1/TinhTienGiam" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Send">
+      <soap:operation soapAction="http://tempuri.org/IService1/Send" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BLLBAN">
+      <soap:operation soapAction="http://tempuri.org/IService1/BLLBAN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BLLCTHD">
+      <soap:operation soapAction="http://tempuri.org/IService1/BLLCTHD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BLLHOADON">
+      <soap:operation soapAction="http://tempuri.org/IService1/BLLHOADON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BLLNHANVIEN">
+      <soap:operation soapAction="http://tempuri.org/IService1/BLLNHANVIEN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BLLNHOMMON">
+      <soap:operation soapAction="http://tempuri.org/IService1/BLLNHOMMON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BLLTHUCDON">
+      <soap:operation soapAction="http://tempuri.org/IService1/BLLTHUCDON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BLLTDPC">
+      <soap:operation soapAction="http://tempuri.org/IService1/BLLTDPC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectBan">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelectBan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TongSoBan">
+      <soap:operation soapAction="http://tempuri.org/IService1/TongSoBan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertBan">
+      <soap:operation soapAction="http://tempuri.org/IService1/InsertBan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdeteBan">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdeteBan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBan">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteBan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChiTietHD">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetChiTietHD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TimKiemCTHD">
+      <soap:operation soapAction="http://tempuri.org/IService1/TimKiemCTHD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsetCTHD">
+      <soap:operation soapAction="http://tempuri.org/IService1/InsetCTHD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCTHD">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateCTHD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCTHD2">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateCTHD2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCTHD">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteCTHD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TimKiemHoaDon5">
+      <soap:operation soapAction="http://tempuri.org/IService1/TimKiemHoaDon5" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThongkeHD">
+      <soap:operation soapAction="http://tempuri.org/IService1/ThongkeHD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHD">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetHD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsetHD">
+      <soap:operation soapAction="http://tempuri.org/IService1/InsetHD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TimKiemHoaDon1">
+      <soap:operation soapAction="http://tempuri.org/IService1/TimKiemHoaDon1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TongSoHd">
+      <soap:operation soapAction="http://tempuri.org/IService1/TongSoHd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TimKiemHoaDon2">
+      <soap:operation soapAction="http://tempuri.org/IService1/TimKiemHoaDon2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TimKiemHoaDon">
+      <soap:operation soapAction="http://tempuri.org/IService1/TimKiemHoaDon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsetHD1">
+      <soap:operation soapAction="http://tempuri.org/IService1/InsetHD1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateHD">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateHD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteHD">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteHD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectNV">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelectNV" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertIntoNV">
+      <soap:operation soapAction="http://tempuri.org/IService1/InsertIntoNV" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateNV">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateNV" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteNV">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteNV" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectNhomMon">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelectNhomMon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TongNhomMon">
+      <soap:operation soapAction="http://tempuri.org/IService1/TongNhomMon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertNhomMon">
+      <soap:operation soapAction="http://tempuri.org/IService1/InsertNhomMon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateNhomMon">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateNhomMon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteNhomMon">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteNhomMon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TimKiemNhomMon">
+      <soap:operation soapAction="http://tempuri.org/IService1/TimKiemNhomMon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectThucDon">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelectThucDon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TongSoMon">
+      <soap:operation soapAction="http://tempuri.org/IService1/TongSoMon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectThucDon1">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelectThucDon1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectThucDon2">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelectThucDon2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsetThucDon">
+      <soap:operation soapAction="http://tempuri.org/IService1/InsetThucDon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateThucDon">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateThucDon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteThucDon">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteThucDon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TimKiemThucDon">
+      <soap:operation soapAction="http://tempuri.org/IService1/TimKiemThucDon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TimKiemThucDon2">
+      <soap:operation soapAction="http://tempuri.org/IService1/TimKiemThucDon2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TimKiemThucDon1">
+      <soap:operation soapAction="http://tempuri.org/IService1/TimKiemThucDon1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectTDPC">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelectTDPC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectTDPC1">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelectTDPC1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InSertTDPC">
+      <soap:operation soapAction="http://tempuri.org/IService1/InSertTDPC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdeteTDPC">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdeteTDPC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://cnpmutc1-001-site1.ftempurl.com/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

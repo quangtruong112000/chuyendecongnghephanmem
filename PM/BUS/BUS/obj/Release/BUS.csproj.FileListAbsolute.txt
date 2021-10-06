@@ -1,0 +1,28 @@
+C:\Users\ADMIN\Desktop\New folder (3)\BUS\BUS\bin\BUS.dll.config
+C:\Users\ADMIN\Desktop\New folder (3)\BUS\BUS\bin\BUS.dll
+C:\Users\ADMIN\Desktop\New folder (3)\BUS\BUS\bin\BUS.pdb
+C:\Users\ADMIN\Desktop\New folder (3)\BUS\BUS\bin\DAL.dll
+C:\Users\ADMIN\Desktop\New folder (3)\BUS\BUS\bin\DTO.dll
+C:\Users\ADMIN\Desktop\New folder (3)\BUS\BUS\bin\DAL.pdb
+C:\Users\ADMIN\Desktop\New folder (3)\BUS\BUS\bin\DAL.dll.config
+C:\Users\ADMIN\Desktop\New folder (3)\BUS\BUS\bin\DTO.pdb
+C:\Users\ADMIN\Desktop\New folder (3)\BUS\BUS\bin\DTO.dll.config
+C:\Users\ADMIN\Desktop\New folder (3)\BUS\BUS\obj\Release\BUS.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Desktop\New folder (3)\BUS\BUS\obj\Release\BUS.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\New folder (3)\BUS\BUS\obj\Release\BUS.csproj.CopyComplete
+C:\Users\ADMIN\Desktop\New folder (3)\BUS\BUS\obj\Release\BUS.dll
+C:\Users\ADMIN\Desktop\New folder (3)\BUS\BUS\obj\Release\BUS.pdb
+C:\Users\ADMIN\Desktop\PM\BUS\BUS\bin\BUS.dll.config
+C:\Users\ADMIN\Desktop\PM\BUS\BUS\bin\BUS.dll
+C:\Users\ADMIN\Desktop\PM\BUS\BUS\bin\BUS.pdb
+C:\Users\ADMIN\Desktop\PM\BUS\BUS\bin\DAL.dll
+C:\Users\ADMIN\Desktop\PM\BUS\BUS\bin\DTO.dll
+C:\Users\ADMIN\Desktop\PM\BUS\BUS\bin\DAL.pdb
+C:\Users\ADMIN\Desktop\PM\BUS\BUS\bin\DAL.dll.config
+C:\Users\ADMIN\Desktop\PM\BUS\BUS\bin\DTO.pdb
+C:\Users\ADMIN\Desktop\PM\BUS\BUS\bin\DTO.dll.config
+C:\Users\ADMIN\Desktop\PM\BUS\BUS\obj\Release\BUS.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Desktop\PM\BUS\BUS\obj\Release\BUS.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\PM\BUS\BUS\obj\Release\BUS.csproj.CopyComplete
+C:\Users\ADMIN\Desktop\PM\BUS\BUS\obj\Release\BUS.dll
+C:\Users\ADMIN\Desktop\PM\BUS\BUS\obj\Release\BUS.pdb
